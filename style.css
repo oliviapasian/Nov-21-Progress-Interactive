@@ -1,0 +1,217 @@
+html {
+  overflow: hidden;
+}
+
+.div1 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  z-index: -1;
+}
+.grid{
+  padding: 10px;
+}
+
+body {
+  background: #303a61;
+  padding: 10px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Introduction */
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #303a61;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction h1 {
+  font-size: 6vw;
+  color: #f68655;
+  font-family: birra-pils, Arial, sans-serif;
+}
+
+.introduction p {
+  padding-bottom: 70px;
+  font-size: 2.75vw;
+  color: #f68655;
+  font-family: bilo, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  width: 70vw;
+  text-align: center;
+}
+
+.introduction button {
+  background: none;
+  border: none;
+  background: #f68655;
+  color: #303a61;
+  padding: 22px;
+  border-radius: 0px;
+  font-size: 30px;
+  font-family: birra-pils, Arial, sans-serif;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.introduction button:hover {
+  background: #e6bed9;
+}
+
+/* Filtering */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.filter-button-group button {
+  border: none;
+  border-radius: 0px;
+  padding: 10px 15px;
+  color: #303a61;
+  background: #e6bed9;
+  font-family: bilo, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 8px;
+  transition: background 0.3s;
+}
+
+.filter-button-group button:hover {
+  background-color: #83889f;
+}
+
+#red-filter {
+  background: #e6462d;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#red-filter:hover {
+  background: #ff7a65;
+}
+
+#orange-filter {
+  background: #f68655;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#orange-filter:hover {
+  background: #ffb392;
+}
+
+#yellow-filter {
+  background: #e4d444;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#yellow-filter:hover {
+  background: #fff383;
+}
+
+#green-filter {
+  background: #99ce60;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#green-filter:hover {
+  background: #b4e39d;
+}
+
+#blue-filter {
+  background: #669dce;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#blue-filter:hover {
+  background: #7dc2e7;
+}
+
+#purple-filter {
+  background: #8e77cf;
+  color: #303a61;
+  transition: background 0.3s;
+}
+
+#purple-filter:hover {
+  background: #c18be7;
+}
+
+/* About Page */
+.about-overlay {
+  visibility: hidden;
+  position: absolute;
+  background: #e6bed9;
+  width: 50vw;
+  height: 50vh;
+  left: 25%;
+  top: 25%;
+}
+
+.about-overlay.active {
+  visibility: visible;
+  text-align: center;
+}
+
+.about-content {
+  visibility: hidden;
+  font-family: bilo, Verdana, sans-serif;
+}
+
+.about-content.active {
+  visibility: visible;
+}
+
+.about-button {
+  background: none;
+  border: none;
+  background: #e6bed9;
+  color: #303a61;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 30px;
+  font-family: birra-pils, Arial, sans-serif;
+  font-weight: bolder;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.about-button:hover {
+  background-color: #83889f;
+}
+
+.close {
+  background: none;
+  border: none;
+  background: #303a61;
+  color: #e6bed9;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-family: birra-pils, Arial, sans-serif;
+  font-weight: bolder;
+}
